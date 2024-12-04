@@ -1,0 +1,16 @@
+# define a colcon package for the autoproj
+# colcon_package 'package'
+
+# define a colcon colcon_metapackage for the autoproj
+#colcon_metapackage 'package',
+#    'package'
+
+# define autoproj metapackage
+# metapackage 'package',
+#     'package',
+#     'package'
+
+cmake_package 'bir_cmake_modules'
+
+colcon_package 'open_manipulation_robot'
+colcon_package 'manual_controller'

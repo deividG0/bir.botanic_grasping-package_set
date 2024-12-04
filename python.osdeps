@@ -1,0 +1,35 @@
+---
+numpy:
+  default:
+    pip:
+    - numpy==1.26.0
+
+opencv-python:
+  default:
+    pip:
+    - opencv-python==4.9.0.80
+
+pyrealsense2:
+  default:
+    pip:
+    - pyrealsense2==2.55.1.6486
+
+transformations:
+  default:
+    pip:
+    - transformations==2024.4.24
+
+urdf-parser-py:
+  default:
+    pip:
+    - urdf-parser-py==0.0.4
+
+trimesh:
+  default:
+    pip:
+    - trimesh==4.3.2
+
+scikit-image:
+  default:
+    pip:
+    - scikit-image==0.23.2

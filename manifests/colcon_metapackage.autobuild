@@ -1,0 +1,50 @@
+# Copyright (c) 2024, SENAI CIMATEC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Write in this file customization code that will get executed after all the
+# sources have been loaded.
+
+# This package is based on ROS2 with colcon and only supports packages defined as:
+
+def import_and_build(macro_package_name, packages)
+  import_package macro_package_name do |pkg|
+    pkg.disable_doc
+    pkg.parallel_build_level = 10
+    pkg.importdir = pkg.name
+    pkg.prefix = pkg.srcdir
+
+    pkg.post_install do
+      packages.each do | pkg_name|
+        package_dir = File.join(pkg.srcdir, pkg_name)
+        package_name = pkg_name
+        if File.directory?(package_dir)
+          usual_manifestdir = File.join(package_dir, "package.xml")
+          if File.exist?(usual_manifestdir)
+            extract_pkg_name = package_dir.split('/').last
+            if(extract_pkg_name)
+              package_name = extract_pkg_name
+            end 
+            pkg.progress_start "Starting colcon for #{package_name}", done_message: "End colcon for #{package_name}" do
+              pkg.run('build', Autobuild.tool(:colcon), "build", "--packages-up-to", package_name, "--event-handlers" , "console_direct+")
+            end
+          end
+        end
+      end
+    end
+  end
+end
+
+
+import_and_build('omp_simulation', packages = [
+  'open_manipulation_robot', 'manual_controller'])
