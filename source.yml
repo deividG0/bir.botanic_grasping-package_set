@@ -21,5 +21,5 @@ version_control:
     github: deividG0/open_manipulator_pro_robot/tree/main/open_manipulator_pro_gazebo
   - manipulator_trajectory_vision_gui:
     github: deividG0/botanic_grasping_gui
-  - .*:
-    github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
+  # - .*:
+  #   github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
