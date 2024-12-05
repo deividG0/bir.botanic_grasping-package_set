@@ -1,17 +1,24 @@
 name: bir.bg
 
 imports:
-  - github: Brazilian-Institute-of-Robotics/ros2.distro-package_set
+  # - github: Brazilian-Institute-of-Robotics/ros2.distro-package_set
+  #   private: true
+
+  # - github: Brazilian-Institute-of-Robotics/ros2.gazebo-package_set
+  #   private: true
+
+  # - github: Brazilian-Institute-of-Robotics/core_base-package_set
+  #   private: true
+  - github: Brazilian-Institute-of-Robotics/bir.ros-package_set
     private: true
 
-  - github: Brazilian-Institute-of-Robotics/ros2.gazebo-package_set
-    private: true
-
-  - github: Brazilian-Institute-of-Robotics/core_base-package_set
+  - github: deividG0/open_manipulator_pro_robot
     private: true
 
 version_control:
-  # - .*:
-  #   github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
+  - .*:
+    github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
   - open_manipulation_robot:
     github: deividG0/open_manipulator_pro_robot
+  - manipulator_trajectory_vision_gui:
+    github: deividG0/botanic_grasping_gui

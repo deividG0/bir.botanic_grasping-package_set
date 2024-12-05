@@ -10,7 +10,7 @@
 #     'package',
 #     'package'
 
-cmake_package 'bir_cmake_modules'
+# cmake_package 'bir_cmake_modules'
 
 colcon_package 'open_manipulation_robot'
-colcon_package 'manual_controller'
+colcon_package 'manipulator_trajectory_vision_gui'

@@ -47,4 +47,4 @@ end
 
 
 import_and_build('omp_simulation', packages = [
-  'open_manipulation_robot', 'manual_controller'])
+  'open_manipulation_robot', 'manipulator_trajectory_vision_gui'])
