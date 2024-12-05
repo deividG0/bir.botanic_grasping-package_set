@@ -12,5 +12,7 @@
 
 # cmake_package 'bir_cmake_modules'
 
-colcon_package 'open_manipulation_robot'
+colcon_package 'open_manipulator_pro_description'
+colcon_package 'open_manipulator_pro_control'
+colcon_package 'open_manipulator_pro_gazebo'
 colcon_package 'manipulator_trajectory_vision_gui'
