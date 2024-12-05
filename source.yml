@@ -14,11 +14,11 @@ version_control:
   # - open_manipulation_robot:
   #   github: deividG0/open_manipulator_pro_robot
   - open_manipulator_pro_description:
-    github: deividG0/open_manipulator_pro_robot/tree/main/open_manipulator_pro_description
+    github: deividG0/open_manipulator_pro_robot/open_manipulator_pro_description
   - open_manipulator_pro_control:
-    github: deividG0/open_manipulator_pro_robot/tree/main/open_manipulator_pro_control
+    github: deividG0/open_manipulator_pro_robot/open_manipulator_pro_control
   - open_manipulator_pro_gazebo:
-    github: deividG0/open_manipulator_pro_robot/tree/main/open_manipulator_pro_gazebo
+    github: deividG0/open_manipulator_pro_robot/open_manipulator_pro_gazebo
   - manipulator_trajectory_vision_gui:
     github: deividG0/botanic_grasping_gui
   # - .*:
