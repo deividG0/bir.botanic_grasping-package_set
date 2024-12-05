@@ -4,6 +4,6 @@ jspg:
   ubuntu:
   - ros-humble-joint-state-publisher-gui
 
-xacro
+xacro:
   ubuntu:
   - ros-humble-xacro
