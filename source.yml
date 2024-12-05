@@ -12,9 +12,6 @@ imports:
   - github: Brazilian-Institute-of-Robotics/bir.ros-package_set
     private: true
 
-  - github: deividG0/open_manipulator_pro_robot
-    private: true
-
 version_control:
   - .*:
     github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
