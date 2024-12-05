@@ -10,7 +10,7 @@
 #     'package',
 #     'package'
 
-# cmake_package 'bir_cmake_modules'
+cmake_package 'bir_cmake_modules'
 
 colcon_package 'open_manipulator_pro_description'
 colcon_package 'open_manipulator_pro_control'
