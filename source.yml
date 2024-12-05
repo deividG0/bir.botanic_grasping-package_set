@@ -1,4 +1,4 @@
-name: bir.bg
+name: bir.botanic_grasping
 
 imports:
   - github: Brazilian-Institute-of-Robotics/ros2.distro-package_set
