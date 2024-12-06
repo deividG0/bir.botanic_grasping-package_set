@@ -46,5 +46,5 @@ def import_and_build(macro_package_name, packages)
 end
 
 
-import_and_build('omp_simulation', packages = [
-  'open_manipulation_robot', 'manipulator_trajectory_vision_gui'])
+import_and_build('botanic_grasping_ros2_control', packages = [
+  'open_manipulation_pro_description', 'open_manipulation_pro_control', 'open_manipulation_pro_gazebo', 'manipulator_trajectory_vision_gui'])

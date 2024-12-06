@@ -1,0 +1,19 @@
+<package>
+    <description brief="This is a ROS 2 package for integrating the `ros2_control` controller architecture with the Gazebo">
+    </description>
+    <maintainer email="deivid.silva@fieb.org.br">Deivid Gomes</maintainer>
+    <license>Apache 2.0</license>
+
+    <depend package="ament_index_cpp"/>
+    <depend package="gz-sim8"/>
+    <depend package="gz-plugin2"/>
+    <depend package="pluginlib"/>
+    <depend package="rclcpp"/>
+    <depend package="yaml_cpp_vendor"/>
+    <depend package="rclcpp_lifecycle"/>
+    <depend package="hardware_interface"/>
+    <depend package="controller_manager"/>
+    <depend package="ament_lint_auto"/>
+    <depend package="ament_lint_common"/>
+    <depend package="joint_state_publisher_gui"/>
+</package>
