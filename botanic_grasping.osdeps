@@ -5,5 +5,5 @@ joint_state_publisher_gui:
   - ros-humble-joint-state-publisher-gui
 
 ros-humble-gazebo-ros-pkgs:
-  ubunt:
+  ubuntu:
   - ros-humble-gazebo-ros-pkgs

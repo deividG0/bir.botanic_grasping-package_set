@@ -29,5 +29,15 @@ version_control:
   - manipulator_trajectory_vision_gui:
     github: deividG0/botanic_grasping_gui
     branch: main
-  # - .*:
-  #   github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
+
+  - dynamixel_hardware:
+    github: dynamixel-community/dynamixel_hardware
+    branch: humble
+
+  - dynamixel-workbench:
+    github: ROBOTIS-GIT/dynamixel-workbench
+    branch: ros2
+
+  - dynamixel-workbench-msgs:
+    github: ROBOTIS-GIT/dynamixel-workbench-msgs
+    branch: ros2
