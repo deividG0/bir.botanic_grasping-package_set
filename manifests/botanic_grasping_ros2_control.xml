@@ -16,4 +16,5 @@
     <depend package="ament_lint_auto"/>
     <depend package="ament_lint_common"/>
     <depend package="joint_state_publisher_gui"/>
+    <depend package="ros-humble-gazebo-ros-pkgs"/>
 </package>

@@ -1,9 +1,9 @@
 # Add gems, pip and OS packages here
 
-jspg:
+joint_state_publisher_gui:
   ubuntu:
   - ros-humble-joint-state-publisher-gui
 
-xacro:
-  ubuntu:
-  - ros-humble-xacro
+ros-humble-gazebo-ros-pkgs:
+  ubunt:
+  - ros-humble-gazebo-ros-pkgs
