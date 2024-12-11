@@ -14,6 +14,10 @@ version_control:
   - .*:
     github: Brazilian-Institute-of-Robotics/$PACKAGE_BASENAME
 
+  - botanic_grasping_gui:
+    github: deividG0/botanic_grasping_gui
+    branch: main
+
   - open_manipulator_pro_description:
     github: deividG0/open_manipulator_pro_description
     branch: main
@@ -24,8 +28,4 @@ version_control:
 
   - open_manipulator_pro_gazebo:
     github: deividG0/open_manipulator_pro_gazebo
-    branch: main
-
-  - botanic_grasping_gui:
-    github: deividG0/botanic_grasping_gui
     branch: main
