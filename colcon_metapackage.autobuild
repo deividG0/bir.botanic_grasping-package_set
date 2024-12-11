@@ -47,4 +47,8 @@ end
 
 
 import_and_build('botanic_grasping_ros2_control', packages = [
-  'open_manipulation_pro_description', 'open_manipulation_pro_control', 'open_manipulation_pro_gazebo', 'manipulator_trajectory_vision_gui', 'dynamixel_hardware'])
+  'botanic_grasping_gui',
+  'open_manipulation_pro_description',
+  'open_manipulation_pro_control',
+  'open_manipulation_pro_gazebo'
+  ])
