@@ -33,3 +33,17 @@ scikit-image:
   default:
     pip:
     - scikit-image==0.23.2
+
+pykin:
+  default:
+    pip:
+    - pykin==1.6.0
+
+transforms3d:
+  default:
+    pip:
+    - transforms3d==0.4.1
+
+ultralytics:
+  default:
+    pip: ultralytics==8.2.16

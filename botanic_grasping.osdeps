@@ -1,9 +1,9 @@
 # Add gems, pip and OS packages here
 
-joint_state_publisher_gui:
+liboctomap-dev:
   ubuntu:
-  - ros-humble-joint-state-publisher-gui
+  - liboctomap-dev
 
-ros-humble-gazebo-ros-pkgs:
+libfcl-dev:
   ubuntu:
-  - ros-humble-gazebo-ros-pkgs
+  - libfcl-dev
